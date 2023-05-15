@@ -16,7 +16,7 @@ function App() {
   const [modeExample, setModeExample] = useState(VALUESBUTTONS.websocket); 
 
    useEffect(() => {
-    socket.on("event_join", (msg) => {
+    socket.on("room_chat", (msg) => {
       console.log("message => ",msg)
     });
   }, []);
